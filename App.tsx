@@ -8,12 +8,17 @@ import { createStackNavigator } from '@react-navigation/stack';
 
 import BottomTabNavigator from './navigation/BottomTabNavigator';
 import useLinking from './navigation/useLinking';
+import HomeScreen from './screens/HomeScreen';
 
 const Stack = createStackNavigator();
+interface AppProps {
+  skipLoadingScreen: boolean;
+}
 
-export default function App(props) {
-  const [isLoadingComplete, setLoadingComplete] = React.useState(false);
-  const [initialNavigationState, setInitialNavigationState] = React.useState();
+export default function App(props: AppProps) {
+  const [isLoadingComplete, setLoadingComplete] = React.useState<boolean>(false);
+  // FIXME: Нужно убрать тип any в будущем
+  const [initialNavigationState, setInitialNavigationState] = React.useState<any>();
   const containerRef = React.useRef();
   const { getInitialState } = useLinking(containerRef);
 
