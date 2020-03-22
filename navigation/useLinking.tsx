@@ -1,7 +1,8 @@
 import { useLinking } from '@react-navigation/native';
 import { Linking } from 'expo';
-
-export default function(containerRef) {
+import { RefObject } from 'react';
+// FIXME: тут не должен быть тип any
+export default function(containerRef: RefObject<any>) {
   return useLinking(containerRef, {
     prefixes: [Linking.makeUrl('/')],
     config: {

@@ -3,7 +3,11 @@ import { Ionicons } from '@expo/vector-icons';
 
 import Colors from '../constants/Colors';
 
-export default function TabBarIcon(props) {
+interface TabBarIconProps {
+  focused: boolean,
+  name: string
+}
+export default function TabBarIcon(props: TabBarIconProps) {
   return (
     <Ionicons
       name={props.name}
