@@ -16,7 +16,7 @@ interface AppProps {
 }
 
 export default function App(props: AppProps) {
-  const [isLoadingComplete, setLoadingComplete] = React.useState<boolean>(false);
+  const [isLoadingComplete, setLoadingComplete] = React.useState(false);
   // FIXME: Нужно убрать тип any в будущем
   const [initialNavigationState, setInitialNavigationState] = React.useState<any>();
   const containerRef = React.useRef();
@@ -51,6 +51,7 @@ export default function App(props: AppProps) {
   if (!isLoadingComplete && !props.skipLoadingScreen) {
     return null;
   } else {
+    console.log(initialNavigationState)
     return (
         <View style={styles.container}>
           {Platform.OS === 'ios' && <StatusBar barStyle="default"/>}
