@@ -1,9 +1,11 @@
 import * as React from 'react';
-import { Text, TextStyle } from 'react-native';
+import {Text, TextStyle} from 'react-native';
+
 interface MonoTextProps {
-  style?: TextStyle,
-  children: string
+    style?: TextStyle,
+    children: string
 }
+
 export function MonoText(props: MonoTextProps) {
-  return <Text {...props} style={[props.style, { fontFamily: 'space-mono' }]} />;
+    return <Text {...props} style={[props.style, {fontFamily: 'space-mono'}]}/>;
 }
