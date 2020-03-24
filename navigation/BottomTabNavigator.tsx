@@ -7,9 +7,8 @@ import {Route} from "react-native";
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Home';
-
 interface BottomTabNavigatorProps {
-    navigation: any
+    navigation: any // FIXME: Наддо будет убрать тип any от сюда
     route: Route
 }
 
@@ -19,7 +18,6 @@ export default function BottomTabNavigator({navigation, route}: BottomTabNavigat
     // https://reactnavigation.org/docs/en/screen-options-resolution.html
     navigation.setOptions({headerTitle: getHeaderTitle(route)});
 
-    console.log(navigation, route)
     return (
         <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
             <BottomTab.Screen
@@ -27,7 +25,8 @@ export default function BottomTabNavigator({navigation, route}: BottomTabNavigat
                 component={HomeScreen}
                 options={{
                     title: 'Get Started',
-                    tabBarIcon: ({focused}) => <TabBarIcon focused={focused} name="md-code-working"/>,
+                    tabBarIcon: ({focused}: { focused: boolean }) => <TabBarIcon focused={focused}
+                                                                                 name="md-code-working"/>,
                 }}
             />
             <BottomTab.Screen
@@ -35,7 +34,7 @@ export default function BottomTabNavigator({navigation, route}: BottomTabNavigat
                 component={LinksScreen}
                 options={{
                     title: 'Resources',
-                    tabBarIcon: ({focused}) => <TabBarIcon focused={focused} name="md-book"/>,
+                    tabBarIcon: ({focused}: { focused: boolean }) => <TabBarIcon focused={focused} name="md-book"/>,
                 }}
             />
         </BottomTab.Navigator>
