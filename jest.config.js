@@ -1,6 +1,3 @@
-// jest.config.js
-const { defaults: tsjPreset } = require('ts-jest/presets');
-
 module.exports = {
     preset: "react-native",
     moduleFileExtensions: [
@@ -10,7 +7,7 @@ module.exports = {
     ],
     transform: {
         "^.+\\.(js)$": "<rootDir>/node_modules/babel-jest",
-        "\\.(ts|tsx)$": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+        '\\.ts$': 'ts-jest',
     },
     testRegex: "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$",
     testPathIgnorePatterns: [
