@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "GA&D",
-    "slug": "GoldenAnchors",
+    "slug": "golden-anchors-and-dragons",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -26,6 +26,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "GA&D - Golden Anchors & Dragons",
+    "githubUrl": "https://github.com/Bibazavr/Golden-Anchors-and-Dragons"
   }
 }
