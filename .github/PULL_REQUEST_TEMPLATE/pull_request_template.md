@@ -1,32 +1,21 @@
 ---
 name: Fix Issue
 about: Create a pull request to help us improve
-title: ''
-labels: ''
-assignees: ''
-
 ---
 
-**Describe the issue**
+**A reference to a related issue in your repository.**
 
 You can just add `#number_issue`
 
-**Expected behavior**
+**A description of the changes proposed in the pull request**
+
 A clear and concise description of what you expected to happen.
 
-**Screenshots**
+**mentions of the person or team responsible for reviewing proposed changes.**
+
 If applicable, add screenshots to help explain your solution.
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
-
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
 
 **Additional context**
+
 Add any other context about the problem here.
