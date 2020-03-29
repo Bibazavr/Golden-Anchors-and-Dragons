@@ -1,9 +1,7 @@
 import * as React from 'react';
 import {Image, Platform, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
-import * as WebBrowser from 'expo-web-browser';
 
-import {MonoText} from '../components/StyledText';
 
 export default function HomeScreen() {
     return (
@@ -12,9 +10,7 @@ export default function HomeScreen() {
                 <View style={styles.welcomeContainer}>
                     <Image
                         source={
-                            __DEV__
-                                ? require('../assets/images/robot-dev.png')
-                                : require('../assets/images/robot-prod.png')
+                            __DEV__ ? require('../assets/images/robot-dev.png') : require('../assets/images/robot-prod.png')
                         }
                         style={styles.welcomeImage}
                     />
@@ -26,7 +22,7 @@ export default function HomeScreen() {
                     <Text style={styles.getStartedText}>Open up the code for this screen:</Text>
 
                     <View style={[styles.codeHighlightContainer, styles.homeScreenFilename]}>
-                        <MonoText>screens/HomeScreen.js</MonoText>
+                        <Text>screens/HomeScreen.js</Text>
                     </View>
 
                     <Text style={styles.getStartedText}>
@@ -35,7 +31,7 @@ export default function HomeScreen() {
                 </View>
 
                 <View style={styles.helpContainer}>
-                    <TouchableOpacity onPress={handleHelpPress} style={styles.helpLink}>
+                    <TouchableOpacity style={styles.helpLink}>
                         <Text style={styles.helpLinkText}>Help, it didn’t automatically reload!</Text>
                     </TouchableOpacity>
                 </View>
@@ -45,7 +41,7 @@ export default function HomeScreen() {
                 <Text style={styles.tabBarInfoText}>This is a tab bar. You can edit it in:</Text>
 
                 <View style={[styles.codeHighlightContainer, styles.navigationFilename]}>
-                    <MonoText style={styles.codeHighlightText}>navigation/BottomTabNavigator.js</MonoText>
+                    <Text style={styles.codeHighlightText}>navigation/BottomTabNavigator.js</Text>
                 </View>
             </View>
         </View>
@@ -58,16 +54,10 @@ HomeScreen.navigationOptions = {
 
 function DevelopmentModeNotice() {
     if (__DEV__) {
-        const learnMoreButton = (
-            <Text onPress={handleLearnMorePress} style={styles.helpLinkText}>
-                Learn more
-            </Text>
-        );
-
         return (
             <Text style={styles.developmentModeText}>
                 Development mode is enabled: your app will be slower but you can use useful development
-                tools. {learnMoreButton}
+                tools.
             </Text>
         );
     } else {
@@ -77,16 +67,6 @@ function DevelopmentModeNotice() {
             </Text>
         );
     }
-}
-
-function handleLearnMorePress() {
-    WebBrowser.openBrowserAsync('https://docs.expo.io/versions/latest/workflow/development-mode/');
-}
-
-function handleHelpPress() {
-    WebBrowser.openBrowserAsync(
-        'https://docs.expo.io/versions/latest/get-started/create-a-new-app/#making-your-first-change'
-    );
 }
 
 const styles = StyleSheet.create({

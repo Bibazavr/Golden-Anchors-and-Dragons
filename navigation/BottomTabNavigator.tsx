@@ -1,14 +1,18 @@
 import * as React from 'react';
+import {Route} from "react-native";
+
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import TabBarIcon from '../components/TabBarIcon';
+import {NavigationProp} from "@react-navigation/core";
+
 import HomeScreen from '../screens/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
-import {Route} from "react-native";
+
 
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Home';
+
 interface BottomTabNavigatorProps {
-    navigation: any // FIXME: Наддо будет убрать тип any от сюда
+    navigation: NavigationProp<{headerTitle: (s: string)=>void}>
     route: Route
 }
 
@@ -25,8 +29,6 @@ export default function BottomTabNavigator({navigation, route}: BottomTabNavigat
                 component={HomeScreen}
                 options={{
                     title: 'Get Started',
-                    tabBarIcon: ({focused}: { focused: boolean }) => <TabBarIcon focused={focused}
-                                                                                 name="md-code-working"/>,
                 }}
             />
             <BottomTab.Screen
@@ -34,7 +36,6 @@ export default function BottomTabNavigator({navigation, route}: BottomTabNavigat
                 component={LinksScreen}
                 options={{
                     title: 'Resources',
-                    tabBarIcon: ({focused}: { focused: boolean }) => <TabBarIcon focused={focused} name="md-book"/>,
                 }}
             />
         </BottomTab.Navigator>
