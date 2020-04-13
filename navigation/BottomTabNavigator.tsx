@@ -4,7 +4,7 @@ import {Route} from "react-native";
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationProp} from "@react-navigation/core";
 
-import HomeScreen from '../screens/HomeScreen';
+import HomeScreen from '../screens/homeScreen/HomeScreen';
 import LinksScreen from '../screens/LinksScreen';
 
 
@@ -12,7 +12,7 @@ const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Home';
 
 interface BottomTabNavigatorProps {
-    navigation: NavigationProp<{headerTitle: (s: string)=>void}>
+    navigation: NavigationProp<{ headerTitle: (s: string) => void }>
     route: Route
 }
 
@@ -47,7 +47,7 @@ function getHeaderTitle(route: Route) {
 
     switch (routeName) {
         case 'Home':
-            return 'How to get started';
+            return 'Golden Anchors';
         case 'Links':
             return 'Links to learn more';
     }

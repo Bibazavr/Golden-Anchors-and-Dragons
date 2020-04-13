@@ -1,11 +1,12 @@
 import * as React from 'react';
 import {Platform, StatusBar, StyleSheet, View} from 'react-native';
-import {NavigationContainer, InitialState} from '@react-navigation/native';
+import {InitialState, NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {SplashScreen} from "expo";
 
 import useLinking from "./navigation/useLinking";
 import BottomTabNavigator from './navigation/BottomTabNavigator';
+
 
 const Stack = createStackNavigator();
 
