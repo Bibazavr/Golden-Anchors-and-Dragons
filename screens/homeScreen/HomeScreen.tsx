@@ -3,9 +3,10 @@ import {Image, Text, TouchableOpacity, View} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 import {createDrawerNavigator} from "@react-navigation/drawer";
 
-import {stylesHomeScreen} from "./homeScreen";
+import {stylesHomeScreen} from "./stylesHomeScreen";
 
-import {Inventory} from "./inventoryScreen/InventoryScreen";
+import {InventoryScreen} from "./inventoryScreen/InventoryScreen";
+import {DiceScreen} from "./diceScreen/DiceScreen";
 
 
 const Drawer = createDrawerNavigator();
@@ -52,7 +53,8 @@ export default function HomeScreen() {
     return (
         <Drawer.Navigator initialRouteName={"home"}>
             <Drawer.Screen name={"Home"} component={Characteristic}/>
-            <Drawer.Screen name={"Inventory"} component={Inventory}/>
+            <Drawer.Screen name={"Inventory"} component={InventoryScreen}/>
+            <Drawer.Screen name={"Dice"} component={DiceScreen}/>
         </Drawer.Navigator>
     );
 }

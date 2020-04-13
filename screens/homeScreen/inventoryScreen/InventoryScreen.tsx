@@ -1,9 +1,12 @@
 import * as React from "react";
 import {Text, View} from "react-native";
 
-export const Inventory = () => {
+import {stylesInventoryScreen} from "./stylesInventoryScreen";
+
+
+export const InventoryScreen = () => {
     return (
-        <View>
+        <View style={stylesInventoryScreen.container}>
             <Text>Сюда надо Запихнуть инвентарь</Text>
         </View>
     )
