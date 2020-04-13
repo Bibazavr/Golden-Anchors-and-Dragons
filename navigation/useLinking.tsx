@@ -12,7 +12,6 @@ export default function (containerRef: RefObject<NavigationContainerRef>) {
                 screens: {
                     Home: 'home',
                     Links: 'links',
-                    Settings: 'settings',
                 },
             },
         },
