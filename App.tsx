@@ -1,5 +1,4 @@
 import * as React from 'react';
-import {RefObject} from 'react';
 import {Platform, StatusBar, StyleSheet, View} from 'react-native';
 import {InitialState, NavigationContainer, NavigationContainerRef} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
@@ -15,7 +14,7 @@ const Stack = createStackNavigator();
 export default function App() {
     const [isLoadingComplete, setLoadingComplete] = React.useState(false);
     const [initialNavigationState, setInitialNavigationState] = React.useState<InitialState>();
-    const containerRef = React.useRef<RefObject<NavigationContainerRef>>();
+    const containerRef = React.useRef<NavigationContainerRef>(null);
     const {getInitialState} = useLinking(containerRef);
 
     // Load any resources or data that we need prior to rendering the app
