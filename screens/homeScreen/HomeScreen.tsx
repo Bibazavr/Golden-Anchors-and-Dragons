@@ -7,6 +7,7 @@ import {stylesHomeScreen} from "./stylesHomeScreen";
 
 import {InventoryScreen} from "./inventoryScreen/InventoryScreen";
 import {DiceScreen} from "./diceScreen/DiceScreen";
+import {TodoScreen} from "./toDoScreen/TodoScreen";
 
 
 const Drawer = createDrawerNavigator();
@@ -55,6 +56,7 @@ export default function HomeScreen() {
             <Drawer.Screen name={"Home"} component={Characteristic}/>
             <Drawer.Screen name={"Inventory"} component={InventoryScreen}/>
             <Drawer.Screen name={"Dice"} component={DiceScreen}/>
+            <Drawer.Screen name={"Todo"} component={TodoScreen}/>
         </Drawer.Navigator>
     );
 }

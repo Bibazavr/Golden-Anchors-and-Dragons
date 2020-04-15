@@ -1,11 +1,13 @@
 import * as React from 'react';
+import {RefObject} from 'react';
 import {Platform, StatusBar, StyleSheet, View} from 'react-native';
-import {InitialState, NavigationContainer} from '@react-navigation/native';
+import {InitialState, NavigationContainer, NavigationContainerRef} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {SplashScreen} from "expo";
 
 import useLinking from "./navigation/useLinking";
 import BottomTabNavigator from './navigation/BottomTabNavigator';
+import * as Font from 'expo-font';
 
 
 const Stack = createStackNavigator();
@@ -13,16 +15,22 @@ const Stack = createStackNavigator();
 export default function App() {
     const [isLoadingComplete, setLoadingComplete] = React.useState(false);
     const [initialNavigationState, setInitialNavigationState] = React.useState<InitialState>();
-    const containerRef = React.useRef();
+    const containerRef = React.useRef<RefObject<NavigationContainerRef>>();
     const {getInitialState} = useLinking(containerRef);
 
     // Load any resources or data that we need prior to rendering the app
     React.useEffect(() => {
         async function loadResourcesAndDataAsync() {
             try {
+
                 SplashScreen.preventAutoHide();
                 // Load our initial navigation state
                 setInitialNavigationState(await getInitialState());
+
+                await Font.loadAsync({
+                    'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
+                    'FontAwesome': require('react-native-vector-icons/Fonts/FontAwesome.ttf'),
+                });
 
             } catch (e) {
                 // We might want to provide this error information to an error reporting service
