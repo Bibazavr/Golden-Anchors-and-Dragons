@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#fff",
+      "flex": 1,
+    }
+  }
+>
+  <TextInput
+    allowFontScaling={true}
+    onChangeText={[Function]}
+    placeholder="Введите todo"
+    rejectResponderTermination={true}
+    style={
+      Object {
+        "backgroundColor": "#f3f3f3",
+        "height": 30,
+        "margin": 10,
+      }
+    }
+    underlineColorAndroid="transparent"
+  />
+  <View
+    style={
+      Object {
+        "borderRadius": 3,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      focusable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "margin": 10,
+          "opacity": 1,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "hsl(208, 8%, 90%)",
+            "borderColor": "#2089dc",
+            "borderRadius": 3,
+            "borderWidth": 0,
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "padding": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            Object {
+              "color": Object {
+                "color": Array [
+                  208,
+                  8,
+                  63,
+                ],
+                "model": "hsl",
+                "valpha": 1,
+              },
+              "fontSize": 18,
+              "paddingBottom": 1,
+              "paddingTop": 2,
+              "textAlign": "center",
+            }
+          }
+        >
+          add
+        </Text>
+      </View>
+    </View>
+  </View>
+  <RCTScrollView
+    data={Array []}
+    disableVirtualization={false}
+    getItem={[Function]}
+    getItemCount={[Function]}
+    horizontal={false}
+    initialNumToRender={10}
+    keyExtractor={[Function]}
+    maxToRenderPerBatch={10}
+    numColumns={1}
+    onContentSizeChange={[Function]}
+    onEndReachedThreshold={2}
+    onLayout={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={50}
+    stickyHeaderIndices={Array []}
+    updateCellsBatchingPeriod={50}
+    viewabilityConfigCallbackPairs={Array []}
+    windowSize={21}
+  >
+    <View />
+  </RCTScrollView>
+</View>
+`;
