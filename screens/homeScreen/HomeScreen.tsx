@@ -7,7 +7,7 @@ import {stylesHomeScreen} from "./stylesHomeScreen";
 
 import {InventoryScreen} from "./inventoryScreen/InventoryScreen";
 import {DiceScreen} from "./diceScreen/DiceScreen";
-import {TodoScreen} from "./toDoScreen/TodoScreen";
+import {TodoScreen} from "./todoScreen/TodoScreen";
 
 
 const Drawer = createDrawerNavigator();
