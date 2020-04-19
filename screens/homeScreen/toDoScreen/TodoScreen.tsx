@@ -4,6 +4,7 @@ import {TodoItem} from "./components/TodoItem";
 import {onChangeTodoItemChecked} from "./utils/onChangeTodoItemChecked";
 import {onDeleteTodoItem} from "./utils/onDeleteTodoItem";
 import {Button} from "react-native-elements";
+import {addTodoItem} from "./utils/addTodoItem";
 
 
 export interface TodoScreenState {
@@ -20,13 +21,11 @@ export const TodoScreen = () => {
                    onChangeText={(inputText) => setTodoItem(inputText)}
                    placeholder={"Введите todo"}/>
 
-        <Button style={stylesTodoScreen.buttonAdd} title={"add"} disabled={todoItem.length === 0} onPress={() => {
-            let newValue = list.slice()
-            newValue.push({title: todoItem, key: list.length.toString(), checked: false})
-            setList(newValue)
-        }}/>
+        <Button style={stylesTodoScreen.buttonAdd} title={"add"}
+                disabled={todoItem.length === 0}
+                onPress={() => setList(addTodoItem(list, todoItem))}/>
 
-        <FlatList data={list} renderItem={({item}) => <TodoItem name={item.title}
+        <FlatList data={list} renderItem={({item}) => <TodoItem name={item.title} key={item.key}
                                                                 checked={item.checked}
                                                                 onDeleteTodoItem={() => setList(onDeleteTodoItem(list, item.key))}
                                                                 onChangeCheck={() => setList(onChangeTodoItemChecked(list, item.key))}/>}/>

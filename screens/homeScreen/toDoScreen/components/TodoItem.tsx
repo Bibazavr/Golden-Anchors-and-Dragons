@@ -12,7 +12,8 @@ interface TodoItemProps {
 
 export const TodoItem = (props: TodoItemProps) => {
     return <View style={stylesTodoItem.container}>
-        <CheckBox containerStyle={stylesTodoItem.checkBox} checked={props.checked} onPress={props.onChangeCheck}/>
+        <CheckBox containerStyle={stylesTodoItem.checkBox} checked={props.checked}
+                  onPress={props.onChangeCheck}/>
         <Text style={stylesTodoItem.text}>{props.name}</Text>
         <Button title={"Удалить"} onPress={props.onDeleteTodoItem}/>
     </View>

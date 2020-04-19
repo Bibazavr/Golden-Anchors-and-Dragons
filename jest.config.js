@@ -14,5 +14,6 @@ module.exports = {
         "\\.snap$",
         "<rootDir>/node_modules/"
     ],
-    cacheDirectory: ".jest/cache"
+    cacheDirectory: ".jest/cache",
+    collectCoverage: true, //можно поглядеть покрытие
 };
