@@ -1,9 +1,10 @@
 import * as React from "react";
 import {FlatList, StyleSheet, TextInput, View} from "react-native";
+import {Button} from "react-native-elements";
+
 import {TodoItem} from "./components/TodoItem";
 import {onChangeTodoItemChecked} from "./utils/onChangeTodoItemChecked";
 import {onDeleteTodoItem} from "./utils/onDeleteTodoItem";
-import {Button} from "react-native-elements";
 import {addTodoItem} from "./utils/addTodoItem";
 
 
