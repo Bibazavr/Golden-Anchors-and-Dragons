@@ -8,27 +8,35 @@ import {addTodoItem} from "./utils/addTodoItem";
 
 
 export interface TodoScreenState {
-    todoItem: { title: string, key: string, checked: boolean }
-    list: TodoScreenState["todoItem"][]
+    todoItem: { title: string, key: string, checked: boolean };
+    list: TodoScreenState["todoItem"][];
 }
 
 export const TodoScreen = () => {
-    const [list, setList] = React.useState<TodoScreenState["list"]>([])
+    const [list, setList] = React.useState<TodoScreenState["list"]>([]);
     const [todoItem, setTodoItem] = React.useState<string>("");
+
+    const onChangeInput = (inputText: string) => setTodoItem(inputText);
+
+    const addTodo = () => setList(addTodoItem(list, todoItem));
+
+    const renderItem = (params: { item: TodoScreenState['todoItem'] }) => <TodoItem
+        name={params.item.title} key={params.item.key}
+        checked={params.item.checked}
+        onDeleteTodoItem={() => setList(onDeleteTodoItem(list, params.item.key))}
+        onChangeCheck={() => setList(onChangeTodoItemChecked(list, params.item.key))}/>
+
 
     return <View style={stylesTodoScreen.container}>
         <TextInput style={stylesTodoScreen.input}
-                   onChangeText={(inputText) => setTodoItem(inputText)}
+                   onChangeText={onChangeInput}
                    placeholder={"Введите todo"}/>
 
         <Button style={stylesTodoScreen.buttonAdd} title={"add"}
                 disabled={todoItem.length === 0}
-                onPress={() => setList(addTodoItem(list, todoItem))}/>
+                onPress={addTodo}/>
 
-        <FlatList data={list} renderItem={({item}) => <TodoItem name={item.title} key={item.key}
-                                                                checked={item.checked}
-                                                                onDeleteTodoItem={() => setList(onDeleteTodoItem(list, item.key))}
-                                                                onChangeCheck={() => setList(onChangeTodoItemChecked(list, item.key))}/>}/>
+        <FlatList data={list} renderItem={renderItem}/>
     </View>
 }
 
