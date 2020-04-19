@@ -2,7 +2,7 @@
 GA&amp;D - Golden Anchors  &amp; Dragons
 
 
-##Introduction
+## Introduction
 
 1. Для работы над проектом нужно [Node.js][Node.js].
 1. Весь проект написан на [typeScript][ts] + [react-native][react-native] + [react-navigation][react-navigation] + [jest][jest] с использование [Expo CLI][expo] 
@@ -10,7 +10,7 @@ GA&amp;D - Golden Anchors  &amp; Dragons
     В будущем пранируется перейти на React Native CLI, когда будет написан модуль BLE
 
 
-##Prepare
+## Prepare
 
 Установка Expo CLI:
 
@@ -21,13 +21,13 @@ GA&amp;D - Golden Anchors  &amp; Dragons
     npm ci
     
     
-##Work
+## Work
 
 Запуск expo:
 
     npm start
     
-##Testing
+## Testing
 
 Разовая проверка тестов:
 
