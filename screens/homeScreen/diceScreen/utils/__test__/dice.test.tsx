@@ -1,6 +1,6 @@
 import {diceDrop, getRndInteger} from "../dice";
 
-it('diceDrop10', () => {
+it('diceDrop10 not toBeNull', () => {
     const drop = diceDrop(10);
 
     expect(drop).not.toBeNull();
