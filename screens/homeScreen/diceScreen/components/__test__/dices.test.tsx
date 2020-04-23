@@ -1,9 +1,10 @@
 import * as React from "react";
 import renderer from "react-test-renderer";
-import {DiceScreen} from "../DiceScreen";
+
+import {Dice10} from "../dices";
 
 it(`not toBeUndefined`, () => {
-    const tree = renderer.create(<DiceScreen/>).toJSON();
+    const tree = renderer.create(<Dice10/>).toJSON();
 
     expect(tree).not.toBeUndefined();
 });
