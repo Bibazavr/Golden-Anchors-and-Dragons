@@ -25,17 +25,19 @@ export const TodoScreen = () => {
         name={params.item.title} key={params.item.key}
         checked={params.item.checked}
         onDeleteTodoItem={() => setList(onDeleteTodoItem(list, params.item.key))}
-        onChangeCheck={() => setList(onChangeTodoItemChecked(list, params.item.key))}/>
+        onChangeCheck={() => setList(onChangeTodoItemChecked(list, params.item.key))}
+        testID={'todoItem'}
+    />
 
 
     return <View style={stylesTodoScreen.container}>
         <TextInput style={stylesTodoScreen.input}
                    onChangeText={onChangeInput}
-                   placeholder={"Введите todo"}/>
+                   placeholder={"Введите todo"} testID="input"/>
 
         <Button style={stylesTodoScreen.buttonAdd} title={"add"}
                 disabled={todoItem.length === 0}
-                onPress={addTodo}/>
+                onPress={addTodo} testID={'addButton'}/>
 
         <FlatList data={list} renderItem={renderItem}/>
     </View>

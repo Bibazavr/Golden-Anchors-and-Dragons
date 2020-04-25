@@ -11,7 +11,7 @@ export const Dice10 = () => {
     const drop = () => setValue(diceDrop(10));
 
     return <View style={stylesDices.container}>
-        <Button title={value.toString()} style={stylesDices.dice10} onPress={drop}/>
+        <Button title={value.toString()} style={stylesDices.dice10} onPress={drop} testID={'diceButton'}/>
     </View>
 };
 

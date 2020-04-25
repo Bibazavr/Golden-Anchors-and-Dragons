@@ -1,10 +1,16 @@
 import * as React from "react";
-import renderer from "react-test-renderer";
+import {fireEvent, render} from "@testing-library/react-native";
 
 import {Dice10} from "../dices";
 
-it(`not toBeUndefined`, () => {
-    const tree = renderer.create(<Dice10/>).toJSON();
+describe("dices", () => {
+    it(`drop`, () => {
+        const page = render(<Dice10/>);
 
-    expect(tree).not.toBeUndefined();
-});
+        const dice = page.getByTestId("diceButton");
+
+        fireEvent.press(dice);
+
+        expect(page.asJSON()).not.toBeUndefined();
+    });
+})

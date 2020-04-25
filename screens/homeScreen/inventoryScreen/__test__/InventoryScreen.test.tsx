@@ -1,10 +1,11 @@
 import * as React from "react";
-import renderer from "react-test-renderer";
+import {render} from "@testing-library/react-native";
+
 import {InventoryScreen} from "../InventoryScreen";
 
 
 it(`renders correctly`, () => {
-    const tree = renderer.create(<InventoryScreen/>).toJSON();
+    const tree = render(<InventoryScreen/>).asJSON();
 
     expect(tree).toMatchSnapshot();
 });

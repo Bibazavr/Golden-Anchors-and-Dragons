@@ -1,9 +1,12 @@
 import * as React from "react";
-import renderer from "react-test-renderer";
+import {render} from "@testing-library/react-native";
+
 import {DiceScreen} from "../DiceScreen";
 
-it(`not toBeUndefined`, () => {
-    const tree = renderer.create(<DiceScreen/>).toJSON();
+describe("DiceScreen", () => {
+    it(`not toBeUndefined`, () => {
+        const tree = render(<DiceScreen/>).asJSON();
 
-    expect(tree).not.toBeUndefined();
-});
+        expect(tree).not.toBeUndefined();
+    });
+})
