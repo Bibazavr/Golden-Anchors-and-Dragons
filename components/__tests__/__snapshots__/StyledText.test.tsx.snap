@@ -1,16 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly 1`] = `
-<Text
+<View
+  collapsable={true}
+  pointerEvents="box-none"
   style={
-    Array [
-      undefined,
-      Object {
-        "fontFamily": "space-mono",
-      },
-    ]
+    Object {
+      "flex": 1,
+    }
   }
 >
-  Snapshot test!
-</Text>
+  <Text
+    style={
+      Array [
+        undefined,
+        Object {
+          "fontFamily": "space-mono",
+        },
+      ]
+    }
+  >
+    Snapshot test!
+  </Text>
+</View>
 `;

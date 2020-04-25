@@ -2,15 +2,25 @@
 
 exports[`renders correctly 1`] = `
 <View
+  collapsable={true}
+  pointerEvents="box-none"
   style={
     Object {
-      "backgroundColor": "#fff",
       "flex": 1,
     }
   }
 >
-  <Text>
-    Сюда надо Запихнуть инвентарь
-  </Text>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "flex": 1,
+      }
+    }
+  >
+    <Text>
+      Сюда надо Запихнуть инвентарь
+    </Text>
+  </View>
 </View>
 `;

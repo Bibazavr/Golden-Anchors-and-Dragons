@@ -1,117 +1,374 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`TodoScreen addAndDeleteTodoItem 1`] = `
 <View
+  collapsable={true}
+  pointerEvents="box-none"
   style={
     Object {
-      "backgroundColor": "#fff",
       "flex": 1,
     }
   }
 >
-  <TextInput
-    allowFontScaling={true}
-    onChangeText={[Function]}
-    placeholder="Введите todo"
-    rejectResponderTermination={true}
-    style={
-      Object {
-        "backgroundColor": "#f3f3f3",
-        "height": 30,
-        "margin": 10,
-      }
-    }
-    underlineColorAndroid="transparent"
-  />
   <View
     style={
       Object {
-        "borderRadius": 3,
+        "backgroundColor": "#fff",
+        "flex": 1,
       }
     }
   >
-    <View
-      accessible={true}
-      focusable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
+    <TextInput
+      allowFontScaling={true}
+      placeholder="Введите todo"
+      rejectResponderTermination={true}
       style={
         Object {
+          "backgroundColor": "#f3f3f3",
+          "height": 30,
           "margin": 10,
-          "opacity": 1,
+        }
+      }
+      testID="input"
+      underlineColorAndroid="transparent"
+    />
+    <View
+      style={
+        Object {
+          "borderRadius": 3,
         }
       }
     >
       <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
         style={
           Object {
-            "alignItems": "center",
-            "backgroundColor": "hsl(208, 8%, 90%)",
-            "borderColor": "#2089dc",
-            "borderRadius": 3,
-            "borderWidth": 0,
-            "flexDirection": "row",
-            "justifyContent": "center",
-            "padding": 8,
+            "margin": 10,
+            "opacity": 1,
           }
         }
+        testID="addButton"
       >
-        <Text
+        <View
           style={
             Object {
-              "color": Object {
-                "color": Array [
-                  208,
-                  8,
-                  63,
-                ],
-                "model": "hsl",
-                "valpha": 1,
-              },
-              "fontSize": 18,
-              "paddingBottom": 1,
-              "paddingTop": 2,
-              "textAlign": "center",
+              "alignItems": "center",
+              "backgroundColor": "#2089dc",
+              "borderColor": "#2089dc",
+              "borderRadius": 3,
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "padding": 8,
             }
           }
         >
-          add
-        </Text>
+          <Text
+            style={
+              Object {
+                "color": "white",
+                "fontSize": 18,
+                "paddingBottom": 1,
+                "paddingTop": 2,
+                "textAlign": "center",
+              }
+            }
+          >
+            add
+          </Text>
+        </View>
       </View>
     </View>
+    <RCTScrollView
+      data={
+        Array [
+          Object {
+            "checked": true,
+            "key": "0",
+            "title": "Создал тест",
+          },
+        ]
+      }
+      disableVirtualization={false}
+      horizontal={false}
+      initialNumToRender={10}
+      maxToRenderPerBatch={10}
+      numColumns={1}
+      onEndReachedThreshold={2}
+      removeClippedSubviews={false}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
+    >
+      <View>
+        <View
+          style={null}
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#fff",
+                "flex": 1,
+                "flexDirection": "row",
+                "justifyContent": "space-around",
+                "margin": 5,
+              }
+            }
+            testID="todoItem"
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              style={
+                Object {
+                  "margin": 5,
+                  "marginLeft": 10,
+                  "marginRight": 10,
+                  "opacity": 1,
+                  "padding": 10,
+                }
+              }
+              testID="checkbox"
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Text
+                  allowFontScaling={false}
+                  style={
+                    Array [
+                      Object {
+                        "color": "#2089dc",
+                        "fontSize": 24,
+                      },
+                      Object {
+                        "minWidth": 24,
+                      },
+                      Object {
+                        "fontFamily": "FontAwesome",
+                        "fontStyle": "normal",
+                        "fontWeight": "normal",
+                      },
+                      Object {},
+                    ]
+                  }
+                >
+                  
+                </Text>
+              </View>
+            </View>
+            <Text
+              style={
+                Object {
+                  "flexGrow": 1,
+                  "maxWidth": 150,
+                }
+              }
+              theme={
+                Object {
+                  "colors": Object {
+                    "disabled": "hsl(208, 8%, 90%)",
+                    "divider": "#bcbbc1",
+                    "error": "#ff190c",
+                    "grey0": "#393e42",
+                    "grey1": "#43484d",
+                    "grey2": "#5e6977",
+                    "grey3": "#86939e",
+                    "grey4": "#bdc6cf",
+                    "grey5": "#e1e8ee",
+                    "greyOutline": "#bbb",
+                    "platform": Object {
+                      "android": Object {
+                        "error": "#f44336",
+                        "primary": "#2196f3",
+                        "secondary": "#9C27B0",
+                        "success": "#4caf50",
+                        "warning": "#ffeb3b",
+                      },
+                      "ios": Object {
+                        "error": "#ff3b30",
+                        "primary": "#007aff",
+                        "secondary": "#5856d6",
+                        "success": "#4cd964",
+                        "warning": "#ffcc00",
+                      },
+                    },
+                    "primary": "#2089dc",
+                    "searchBg": "#303337",
+                    "secondary": "#8F0CE8",
+                    "success": "#52c41a",
+                    "warning": "#faad14",
+                  },
+                }
+              }
+            >
+              Создал тест
+            </Text>
+            <View
+              style={
+                Object {
+                  "borderRadius": 3,
+                }
+              }
+            >
+              <View
+                accessible={true}
+                focusable={true}
+                isTVSelectable={true}
+                style={
+                  Object {
+                    "opacity": 1,
+                  }
+                }
+                testID="todoItem-delete"
+              >
+                <View
+                  style={
+                    Object {
+                      "alignItems": "center",
+                      "backgroundColor": "#2089dc",
+                      "borderColor": "#2089dc",
+                      "borderRadius": 3,
+                      "borderWidth": 0,
+                      "flexDirection": "row",
+                      "justifyContent": "center",
+                      "padding": 8,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Object {
+                        "color": "white",
+                        "fontSize": 18,
+                        "paddingBottom": 1,
+                        "paddingTop": 2,
+                        "textAlign": "center",
+                      }
+                    }
+                  >
+                    Удалить
+                  </Text>
+                </View>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
   </View>
-  <RCTScrollView
-    data={Array []}
-    disableVirtualization={false}
-    getItem={[Function]}
-    getItemCount={[Function]}
-    horizontal={false}
-    initialNumToRender={10}
-    keyExtractor={[Function]}
-    maxToRenderPerBatch={10}
-    numColumns={1}
-    onContentSizeChange={[Function]}
-    onEndReachedThreshold={2}
-    onLayout={[Function]}
-    onMomentumScrollEnd={[Function]}
-    onScroll={[Function]}
-    onScrollBeginDrag={[Function]}
-    onScrollEndDrag={[Function]}
-    removeClippedSubviews={false}
-    renderItem={[Function]}
-    scrollEventThrottle={50}
-    stickyHeaderIndices={Array []}
-    updateCellsBatchingPeriod={50}
-    viewabilityConfigCallbackPairs={Array []}
-    windowSize={21}
+</View>
+`;
+
+exports[`TodoScreen addAndDeleteTodoItem 2`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "flex": 1,
+      }
+    }
   >
-    <View />
-  </RCTScrollView>
+    <TextInput
+      allowFontScaling={true}
+      placeholder="Введите todo"
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "backgroundColor": "#f3f3f3",
+          "height": 30,
+          "margin": 10,
+        }
+      }
+      testID="input"
+      underlineColorAndroid="transparent"
+    />
+    <View
+      style={
+        Object {
+          "borderRadius": 3,
+        }
+      }
+    >
+      <View
+        accessible={true}
+        focusable={true}
+        isTVSelectable={true}
+        style={
+          Object {
+            "margin": 10,
+            "opacity": 1,
+          }
+        }
+        testID="addButton"
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "#2089dc",
+              "borderColor": "#2089dc",
+              "borderRadius": 3,
+              "borderWidth": 0,
+              "flexDirection": "row",
+              "justifyContent": "center",
+              "padding": 8,
+            }
+          }
+        >
+          <Text
+            style={
+              Object {
+                "color": "white",
+                "fontSize": 18,
+                "paddingBottom": 1,
+                "paddingTop": 2,
+                "textAlign": "center",
+              }
+            }
+          >
+            add
+          </Text>
+        </View>
+      </View>
+    </View>
+    <RCTScrollView
+      data={Array []}
+      disableVirtualization={false}
+      horizontal={false}
+      initialNumToRender={10}
+      maxToRenderPerBatch={10}
+      numColumns={1}
+      onEndReachedThreshold={2}
+      removeClippedSubviews={false}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
+      updateCellsBatchingPeriod={50}
+      viewabilityConfigCallbackPairs={Array []}
+      windowSize={21}
+    >
+      <View />
+    </RCTScrollView>
+  </View>
 </View>
 `;
