@@ -3,10 +3,10 @@ import {Platform, StatusBar, StyleSheet, View} from 'react-native';
 import {InitialState, NavigationContainer, NavigationContainerRef} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {SplashScreen} from "expo";
-
-import useLinking from "./navigation/useLinking";
-import BottomTabNavigator from './navigation/BottomTabNavigator';
 import * as Font from 'expo-font';
+
+import useLinking from "./src/navigation/useLinking";
+import BottomTabNavigator from './src/navigation/BottomTabNavigator';
 
 
 const Stack = createStackNavigator();
@@ -27,7 +27,7 @@ export default function App() {
                 setInitialNavigationState(await getInitialState());
 
                 await Font.loadAsync({
-                    'space-mono': require('./assets/fonts/SpaceMono-Regular.ttf'),
+                    'space-mono': require('./src/assets/fonts/SpaceMono-Regular.ttf'),
                     'FontAwesome': require('react-native-vector-icons/Fonts/FontAwesome.ttf'),
                 });
 

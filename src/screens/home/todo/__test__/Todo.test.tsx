@@ -1,13 +1,13 @@
 import * as React from "react";
 import {fireEvent, render} from "@testing-library/react-native";
 
-import {TodoScreen} from "../TodoScreen";
+import {Todo} from "../Todo";
 
 jest.mock('react-native/Libraries/Animated/src/NativeAnimatedHelper');
 
 describe(`TodoScreen`, () => {
     it('addAndDeleteTodoItem', () => {
-        const page = render(<TodoScreen/>)
+        const page = render(<Todo/>)
 
         const test = 'Создал тест';
 

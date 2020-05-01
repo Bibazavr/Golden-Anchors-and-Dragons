@@ -1,7 +1,7 @@
 import * as React from "react";
 import {render} from "@testing-library/react-native";
 
-import {DiceScreen} from "../DiceScreen";
+import {DiceScreen} from "../Dices";
 
 describe("DiceScreen", () => {
     it(`not toBeUndefined`, () => {

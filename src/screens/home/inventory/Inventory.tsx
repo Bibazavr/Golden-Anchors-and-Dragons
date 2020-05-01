@@ -4,7 +4,7 @@ import {StyleSheet, View} from "react-native";
 import {BasicSlot} from "./utils/Modal";
 
 
-export const InventoryScreen = () => {
+export const Inventory = () => {
     return (
         <View style={stylesInventoryScreen.container}>
             <BasicSlot/>

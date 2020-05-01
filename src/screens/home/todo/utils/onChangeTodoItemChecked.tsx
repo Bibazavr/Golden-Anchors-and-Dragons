@@ -1,4 +1,4 @@
-import {TodoScreenState} from "../TodoScreen";
+import {TodoScreenState} from "../Todo";
 
 export const onChangeTodoItemChecked = (list: TodoScreenState["list"], key: string): TodoScreenState["list"] => {
     let newList: TodoScreenState["list"] = [];

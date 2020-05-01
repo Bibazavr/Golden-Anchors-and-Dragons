@@ -1,6 +1,6 @@
 import {Platform, StyleSheet} from "react-native";
 
-export const stylesHomeScreen = StyleSheet.create({
+export const stylesHome = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: '#fff',
