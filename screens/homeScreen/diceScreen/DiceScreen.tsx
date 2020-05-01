@@ -1,13 +1,13 @@
 import * as React from "react";
 import {StyleSheet, View} from "react-native";
 
-import {Dice10} from "./components/dices";
+import {Dices} from "./components/Dices";
 
 
 export const DiceScreen = () => {
     return (
         <View style={stylesDiceScreen.container}>
-            <Dice10/>
+            <Dices/>
         </View>
     )
 }
