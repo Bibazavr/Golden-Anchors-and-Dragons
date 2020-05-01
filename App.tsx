@@ -4,6 +4,7 @@ import {InitialState, NavigationContainer, NavigationContainerRef} from '@react-
 import {createStackNavigator} from '@react-navigation/stack';
 import {SplashScreen} from "expo";
 import * as Font from 'expo-font';
+import {Audio} from "expo-av";
 
 import useLinking from "./src/navigation/useLinking";
 import BottomTabNavigator from './src/navigation/BottomTabNavigator';
@@ -17,6 +18,7 @@ export default function App() {
     const containerRef = React.useRef<NavigationContainerRef>(null);
     const {getInitialState} = useLinking(containerRef);
 
+    const soundObject = new Audio.Sound();
     // Load any resources or data that we need prior to rendering the app
     React.useEffect(() => {
         async function loadResourcesAndDataAsync() {
@@ -30,6 +32,9 @@ export default function App() {
                     'space-mono': require('./src/assets/fonts/SpaceMono-Regular.ttf'),
                     'FontAwesome': require('react-native-vector-icons/Fonts/FontAwesome.ttf'),
                 });
+                // Временная музычка для настроения
+                await soundObject.loadAsync(require('./src/assets/sounds/not_your_business.mp3'));
+                await soundObject.playAsync();
 
             } catch (e) {
                 // We might want to provide this error information to an error reporting service
