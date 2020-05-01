@@ -5,7 +5,7 @@ import {Button, Text} from "react-native-elements";
 import {diceDrop} from "../utils/dice";
 
 export const Dice = (props: { facets: number, style?: StyleProp<ViewStyle> }) => {
-    const [value, setValue] = React.useState<number>(diceDrop(props.facets));
+    const [value, setValue] = React.useState<number>(props.facets);
 
     const drop = () => setValue(diceDrop(props.facets));
 
