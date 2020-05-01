@@ -4,8 +4,8 @@ import {Route} from "react-native";
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {NavigationProp} from "@react-navigation/core";
 
-import HomeScreen from '../screens/homeScreen/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
+import Home from '../screens/home/Home';
+import Links from '../screens/Links';
 
 
 const BottomTab = createBottomTabNavigator();
@@ -26,14 +26,14 @@ export default function BottomTabNavigator({navigation, route}: BottomTabNavigat
         <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
             <BottomTab.Screen
                 name="Home"
-                component={HomeScreen}
+                component={Home}
                 options={{
                     title: 'Get Started',
                 }}
             />
             <BottomTab.Screen
                 name="Links"
-                component={LinksScreen}
+                component={Links}
                 options={{
                     title: 'Resources',
                 }}

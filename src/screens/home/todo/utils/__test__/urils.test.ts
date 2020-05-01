@@ -1,6 +1,6 @@
 import {onChangeTodoItemChecked} from "../onChangeTodoItemChecked";
 import {onDeleteTodoItem} from "../onDeleteTodoItem";
-import {TodoScreenState} from "../../TodoScreen";
+import {TodoScreenState} from "../../Todo";
 import {addTodoItem} from "../addTodoItem";
 
 it('onChangeTodoItemChecked', () => {

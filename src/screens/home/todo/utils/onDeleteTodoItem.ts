@@ -1,4 +1,4 @@
-import {TodoScreenState} from "../TodoScreen";
+import {TodoScreenState} from "../Todo";
 
 export const onDeleteTodoItem = (list: TodoScreenState["list"], key: string) => {
     let newValue: TodoScreenState["list"] = [];

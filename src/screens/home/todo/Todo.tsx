@@ -13,7 +13,7 @@ export interface TodoScreenState {
     list: TodoScreenState["todoItem"][];
 }
 
-export const TodoScreen = () => {
+export const Todo = () => {
     const [list, setList] = React.useState<TodoScreenState["list"]>([]);
     const [todoItem, setTodoItem] = React.useState<string>("");
 
