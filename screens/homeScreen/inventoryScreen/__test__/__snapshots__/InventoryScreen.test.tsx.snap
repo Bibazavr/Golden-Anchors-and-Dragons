@@ -13,14 +13,1047 @@ exports[`renders correctly 1`] = `
   <View
     style={
       Object {
+        "alignItems": "center",
         "backgroundColor": "#fff",
         "flex": 1,
+        "justifyContent": "center",
       }
     }
   >
-    <Text>
-      Сюда надо Запихнуть инвентарь
-    </Text>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "marginTop": 22,
+        }
+      }
+    >
+      <Modal
+        animationType="slide"
+        hardwareAccelerated={false}
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+              "marginTop": 22,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderRadius": 20,
+                "elevation": 5,
+                "margin": 20,
+                "padding": 35,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.25,
+                "shadowRadius": 3.84,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "marginBottom": 15,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Тут реализовать выбор предметов
+            </Text>
+            <View
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              style={
+                Object {
+                  "backgroundColor": "#2196F3",
+                  "borderColor": "lightgrey",
+                  "borderRadius": 10,
+                  "borderWidth": 2,
+                  "elevation": 2,
+                  "height": 50,
+                  "width": 50,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "white",
+                    "fontWeight": "bold",
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Hide Modal
+              </Text>
+            </View>
+          </View>
+        </View>
+      </Modal>
+      <View
+        style={
+          Object {
+            "borderRadius": 3,
+          }
+        }
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          style={
+            Object {
+              "backgroundColor": "#F194FF",
+              "borderColor": "lightgrey",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "elevation": 2,
+              "height": 50,
+              "opacity": 1,
+              "width": 50,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#2089dc",
+                "borderRadius": 3,
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "padding": 8,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-around",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "marginTop": 22,
+          }
+        }
+      >
+        <Modal
+          animationType="slide"
+          hardwareAccelerated={false}
+          transparent={true}
+          visible={false}
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "justifyContent": "center",
+                "marginTop": 22,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "white",
+                  "borderRadius": 20,
+                  "elevation": 5,
+                  "margin": 20,
+                  "padding": 35,
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.25,
+                  "shadowRadius": 3.84,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "marginBottom": 15,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Тут реализовать выбор предметов
+              </Text>
+              <View
+                accessible={true}
+                focusable={true}
+                isTVSelectable={true}
+                style={
+                  Object {
+                    "backgroundColor": "#2196F3",
+                    "borderColor": "lightgrey",
+                    "borderRadius": 10,
+                    "borderWidth": 2,
+                    "elevation": 2,
+                    "height": 50,
+                    "width": 50,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "white",
+                      "fontWeight": "bold",
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Hide Modal
+                </Text>
+              </View>
+            </View>
+          </View>
+        </Modal>
+        <View
+          style={
+            Object {
+              "borderRadius": 3,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            style={
+              Object {
+                "backgroundColor": "#F194FF",
+                "borderColor": "lightgrey",
+                "borderRadius": 10,
+                "borderWidth": 2,
+                "elevation": 2,
+                "height": 50,
+                "opacity": 1,
+                "width": 50,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#2089dc",
+                  "borderRadius": 3,
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "padding": 8,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "marginTop": 22,
+          }
+        }
+      >
+        <Modal
+          animationType="slide"
+          hardwareAccelerated={false}
+          transparent={true}
+          visible={false}
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "justifyContent": "center",
+                "marginTop": 22,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "white",
+                  "borderRadius": 20,
+                  "elevation": 5,
+                  "margin": 20,
+                  "padding": 35,
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.25,
+                  "shadowRadius": 3.84,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "marginBottom": 15,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Тут реализовать выбор предметов
+              </Text>
+              <View
+                accessible={true}
+                focusable={true}
+                isTVSelectable={true}
+                style={
+                  Object {
+                    "backgroundColor": "#2196F3",
+                    "borderColor": "lightgrey",
+                    "borderRadius": 10,
+                    "borderWidth": 2,
+                    "elevation": 2,
+                    "height": 50,
+                    "width": 50,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "white",
+                      "fontWeight": "bold",
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Hide Modal
+                </Text>
+              </View>
+            </View>
+          </View>
+        </Modal>
+        <View
+          style={
+            Object {
+              "borderRadius": 3,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            style={
+              Object {
+                "backgroundColor": "#F194FF",
+                "borderColor": "lightgrey",
+                "borderRadius": 10,
+                "borderWidth": 2,
+                "elevation": 2,
+                "height": 50,
+                "opacity": 1,
+                "width": 50,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#2089dc",
+                  "borderRadius": 3,
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "padding": 8,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "marginTop": 22,
+          }
+        }
+      >
+        <Modal
+          animationType="slide"
+          hardwareAccelerated={false}
+          transparent={true}
+          visible={false}
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "justifyContent": "center",
+                "marginTop": 22,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "white",
+                  "borderRadius": 20,
+                  "elevation": 5,
+                  "margin": 20,
+                  "padding": 35,
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.25,
+                  "shadowRadius": 3.84,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "marginBottom": 15,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Тут реализовать выбор предметов
+              </Text>
+              <View
+                accessible={true}
+                focusable={true}
+                isTVSelectable={true}
+                style={
+                  Object {
+                    "backgroundColor": "#2196F3",
+                    "borderColor": "lightgrey",
+                    "borderRadius": 10,
+                    "borderWidth": 2,
+                    "elevation": 2,
+                    "height": 50,
+                    "width": 50,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "white",
+                      "fontWeight": "bold",
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Hide Modal
+                </Text>
+              </View>
+            </View>
+          </View>
+        </Modal>
+        <View
+          style={
+            Object {
+              "borderRadius": 3,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            style={
+              Object {
+                "backgroundColor": "#F194FF",
+                "borderColor": "lightgrey",
+                "borderRadius": 10,
+                "borderWidth": 2,
+                "elevation": 2,
+                "height": 50,
+                "opacity": 1,
+                "width": 50,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#2089dc",
+                  "borderRadius": 3,
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "padding": 8,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "marginTop": 22,
+        }
+      }
+    >
+      <Modal
+        animationType="slide"
+        hardwareAccelerated={false}
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+              "marginTop": 22,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderRadius": 20,
+                "elevation": 5,
+                "margin": 20,
+                "padding": 35,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.25,
+                "shadowRadius": 3.84,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "marginBottom": 15,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Тут реализовать выбор предметов
+            </Text>
+            <View
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              style={
+                Object {
+                  "backgroundColor": "#2196F3",
+                  "borderColor": "lightgrey",
+                  "borderRadius": 10,
+                  "borderWidth": 2,
+                  "elevation": 2,
+                  "height": 50,
+                  "width": 50,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "white",
+                    "fontWeight": "bold",
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Hide Modal
+              </Text>
+            </View>
+          </View>
+        </View>
+      </Modal>
+      <View
+        style={
+          Object {
+            "borderRadius": 3,
+          }
+        }
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          style={
+            Object {
+              "backgroundColor": "#F194FF",
+              "borderColor": "lightgrey",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "elevation": 2,
+              "height": 50,
+              "opacity": 1,
+              "width": 50,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#2089dc",
+                "borderRadius": 3,
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "padding": 8,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+          "marginTop": 22,
+        }
+      }
+    >
+      <Modal
+        animationType="slide"
+        hardwareAccelerated={false}
+        transparent={true}
+        visible={false}
+      >
+        <View
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "justifyContent": "center",
+              "marginTop": 22,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "white",
+                "borderRadius": 20,
+                "elevation": 5,
+                "margin": 20,
+                "padding": 35,
+                "shadowColor": "#000",
+                "shadowOffset": Object {
+                  "height": 2,
+                  "width": 0,
+                },
+                "shadowOpacity": 0.25,
+                "shadowRadius": 3.84,
+              }
+            }
+          >
+            <Text
+              style={
+                Object {
+                  "marginBottom": 15,
+                  "textAlign": "center",
+                }
+              }
+            >
+              Тут реализовать выбор предметов
+            </Text>
+            <View
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              style={
+                Object {
+                  "backgroundColor": "#2196F3",
+                  "borderColor": "lightgrey",
+                  "borderRadius": 10,
+                  "borderWidth": 2,
+                  "elevation": 2,
+                  "height": 50,
+                  "width": 50,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "color": "white",
+                    "fontWeight": "bold",
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Hide Modal
+              </Text>
+            </View>
+          </View>
+        </View>
+      </Modal>
+      <View
+        style={
+          Object {
+            "borderRadius": 3,
+          }
+        }
+      >
+        <View
+          accessible={true}
+          focusable={true}
+          isTVSelectable={true}
+          style={
+            Object {
+              "backgroundColor": "#F194FF",
+              "borderColor": "lightgrey",
+              "borderRadius": 10,
+              "borderWidth": 2,
+              "elevation": 2,
+              "height": 50,
+              "opacity": 1,
+              "width": 50,
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "transparent",
+                "borderColor": "#2089dc",
+                "borderRadius": 3,
+                "borderWidth": 0,
+                "flexDirection": "row",
+                "justifyContent": "center",
+                "padding": 8,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flexDirection": "row",
+          "justifyContent": "space-around",
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "marginTop": 22,
+          }
+        }
+      >
+        <Modal
+          animationType="slide"
+          hardwareAccelerated={false}
+          transparent={true}
+          visible={false}
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "justifyContent": "center",
+                "marginTop": 22,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "white",
+                  "borderRadius": 20,
+                  "elevation": 5,
+                  "margin": 20,
+                  "padding": 35,
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.25,
+                  "shadowRadius": 3.84,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "marginBottom": 15,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Тут реализовать выбор предметов
+              </Text>
+              <View
+                accessible={true}
+                focusable={true}
+                isTVSelectable={true}
+                style={
+                  Object {
+                    "backgroundColor": "#2196F3",
+                    "borderColor": "lightgrey",
+                    "borderRadius": 10,
+                    "borderWidth": 2,
+                    "elevation": 2,
+                    "height": 50,
+                    "width": 50,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "white",
+                      "fontWeight": "bold",
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Hide Modal
+                </Text>
+              </View>
+            </View>
+          </View>
+        </Modal>
+        <View
+          style={
+            Object {
+              "borderRadius": 3,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            style={
+              Object {
+                "backgroundColor": "#F194FF",
+                "borderColor": "lightgrey",
+                "borderRadius": 10,
+                "borderWidth": 2,
+                "elevation": 2,
+                "height": 50,
+                "opacity": 1,
+                "width": 50,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#2089dc",
+                  "borderRadius": 3,
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "padding": 8,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+            "justifyContent": "center",
+            "marginTop": 22,
+          }
+        }
+      >
+        <Modal
+          animationType="slide"
+          hardwareAccelerated={false}
+          transparent={true}
+          visible={false}
+        >
+          <View
+            style={
+              Object {
+                "alignItems": "center",
+                "flex": 1,
+                "justifyContent": "center",
+                "marginTop": 22,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "white",
+                  "borderRadius": 20,
+                  "elevation": 5,
+                  "margin": 20,
+                  "padding": 35,
+                  "shadowColor": "#000",
+                  "shadowOffset": Object {
+                    "height": 2,
+                    "width": 0,
+                  },
+                  "shadowOpacity": 0.25,
+                  "shadowRadius": 3.84,
+                }
+              }
+            >
+              <Text
+                style={
+                  Object {
+                    "marginBottom": 15,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                Тут реализовать выбор предметов
+              </Text>
+              <View
+                accessible={true}
+                focusable={true}
+                isTVSelectable={true}
+                style={
+                  Object {
+                    "backgroundColor": "#2196F3",
+                    "borderColor": "lightgrey",
+                    "borderRadius": 10,
+                    "borderWidth": 2,
+                    "elevation": 2,
+                    "height": 50,
+                    "width": 50,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Object {
+                      "color": "white",
+                      "fontWeight": "bold",
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                  Hide Modal
+                </Text>
+              </View>
+            </View>
+          </View>
+        </Modal>
+        <View
+          style={
+            Object {
+              "borderRadius": 3,
+            }
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            style={
+              Object {
+                "backgroundColor": "#F194FF",
+                "borderColor": "lightgrey",
+                "borderRadius": 10,
+                "borderWidth": 2,
+                "elevation": 2,
+                "height": 50,
+                "opacity": 1,
+                "width": 50,
+              }
+            }
+          >
+            <View
+              style={
+                Object {
+                  "alignItems": "center",
+                  "backgroundColor": "transparent",
+                  "borderColor": "#2089dc",
+                  "borderRadius": 3,
+                  "borderWidth": 0,
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "padding": 8,
+                }
+              }
+            />
+          </View>
+        </View>
+      </View>
+    </View>
   </View>
 </View>
 `;
