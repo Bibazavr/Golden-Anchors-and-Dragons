@@ -1,31 +1,11 @@
 import * as React from 'react';
 import {StyleSheet, Text, TextStyle, View, ViewStyle} from 'react-native';
-import * as WebBrowser from 'expo-web-browser';
 import {RectButton, ScrollView} from 'react-native-gesture-handler';
 
 export default function Links() {
     return (
         <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-            <OptionButton
-                icon="md-school"
-                label="Read the Expo documentation"
-                onPress={() => WebBrowser.openBrowserAsync('https://docs.expo.io')}
-                isLastOption={false}
-            />
-
-            <OptionButton
-                icon="md-compass"
-                label="Read the React Navigation documentation"
-                onPress={() => WebBrowser.openBrowserAsync('https://reactnavigation.org')}
-                isLastOption={false}
-            />
-
-            <OptionButton
-                icon="ios-chatboxes"
-                label="Ask a question on the forums"
-                onPress={() => WebBrowser.openBrowserAsync('https://forums.expo.io')}
-                isLastOption
-            />
+           <Text>Пока не знаю, что сюда запихать - надо табиков штуки 5</Text>
         </ScrollView>
     );
 }
