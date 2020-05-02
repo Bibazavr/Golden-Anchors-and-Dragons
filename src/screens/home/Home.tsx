@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {Image, Text, TouchableOpacity, View} from 'react-native';
+import {Image, Text, View} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
 
 import {stylesHome} from "./stylesHome";
@@ -21,22 +21,11 @@ export const Characteristic = () => {
                 <View style={stylesHome.getStartedContainer}>
                     <DevelopmentModeNotice/>
 
-                    <Text style={stylesHome.getStartedText}>Open up the code for this screen:</Text>
-
-                    <View style={[stylesHome.codeHighlightContainer, stylesHome.homeScreenFilename]}>
-                        <Text>screens/HomeScreen.js</Text>
-                    </View>
-
                     <Text style={stylesHome.getStartedText}>
                         Тут надо основные характеристики распихать персонажа
                     </Text>
                 </View>
 
-                <View style={stylesHome.helpContainer}>
-                    <TouchableOpacity style={stylesHome.helpLink}>
-                        <Text style={stylesHome.helpLinkText}>Help, it didn’t automatically reload!</Text>
-                    </TouchableOpacity>
-                </View>
             </ScrollView>
         </View>
     )

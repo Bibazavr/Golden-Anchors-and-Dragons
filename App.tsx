@@ -8,6 +8,7 @@ import {Audio} from "expo-av";
 
 import useLinking from "./src/navigation/useLinking";
 import BottomTabNavigator from './src/navigation/BottomTabNavigator';
+import Profile from "./src/navigation/Profile";
 
 
 const Stack = createStackNavigator();
@@ -58,6 +59,7 @@ export default function App() {
                 <NavigationContainer ref={containerRef} initialState={initialNavigationState}>
                     <Stack.Navigator>
                         <Stack.Screen name="Root" component={BottomTabNavigator}/>
+                        <Stack.Screen name="Profile" component={Profile}/>
                     </Stack.Navigator>
                 </NavigationContainer>
             </View>

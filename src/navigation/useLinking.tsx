@@ -10,11 +10,12 @@ export default function (containerRef: React.RefObject<NavigationContainerRef>) 
             Root: {
                 path: 'root',
                 screens: {
-                    Home: 'home',
+                    Profile: 'profile',
                     Links: 'links',
                     Dices: 'dices',
                 },
             },
         },
+
     });
 }

@@ -6,18 +6,18 @@ import {NavigationProp} from "@react-navigation/core";
 
 import Links from '../screens/Links';
 import {DiceScreen} from "../screens/dices/Dices";
-import RightSide from "./RightSide";
+import Profile from "./Profile";
 
 
 const BottomTab = createBottomTabNavigator();
-const INITIAL_ROUTE_NAME = 'RightSide';
+const INITIAL_ROUTE_NAME = 'Profile';
 
-interface BottomTabNavigatorProps {
+export interface NavigatorProps {
     navigation: NavigationProp<{ headerTitle: (s: string) => void }>
     route: Route
 }
 
-export default function BottomTabNavigator({navigation, route}: BottomTabNavigatorProps) {
+export default function BottomTabNavigator({navigation, route}: NavigatorProps) {
     // Set the header title on the parent stack navigator depending on the
     // currently active tab. Learn more in the documentation:
     // https://reactnavigation.org/docs/en/screen-options-resolution.html
@@ -30,7 +30,7 @@ export default function BottomTabNavigator({navigation, route}: BottomTabNavigat
                 component={Links}
                 options={{
                     tabBarIcon: ({color, size}) => <Icon name={'settings'} color={color} size={size}/>,
-                    title: 'Dices',
+                    title: 'Links',
                 }}
             />
             <BottomTab.Screen
@@ -42,8 +42,8 @@ export default function BottomTabNavigator({navigation, route}: BottomTabNavigat
                 }}
             />
             <BottomTab.Screen
-                name="Home"
-                component={RightSide}
+                name="Profile"
+                component={Profile}
                 options={{
                     tabBarIcon: ({color, size}) => <Icon name={'videogame-asset'} color={color} size={size}/>,
                     title: 'Profile',
@@ -61,7 +61,7 @@ function getHeaderTitle(route: Route) {
             return 'GA&D Dices';
         case 'Links':
             return 'Links to learn more';
-        case 'Home':
+        case 'Profile':
             return 'GA&D Profile';
     }
 }
