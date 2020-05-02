@@ -31,10 +31,11 @@ export default function App() {
                 await Font.loadAsync({
                     'space-mono': require('./src/assets/fonts/SpaceMono-Regular.ttf'),
                     'FontAwesome': require('react-native-vector-icons/Fonts/FontAwesome.ttf'),
+                    'Material Icons': require('react-native-vector-icons/Fonts/MaterialIcons.ttf'),
                 });
                 // Временная музычка для настроения
                 await soundObject.loadAsync(require('./src/assets/sounds/not_your_business.mp3'));
-                await soundObject.playAsync();
+                // await soundObject.playAsync();
 
             } catch (e) {
                 // We might want to provide this error information to an error reporting service

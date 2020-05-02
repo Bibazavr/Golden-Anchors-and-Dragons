@@ -12,6 +12,7 @@ export default function (containerRef: React.RefObject<NavigationContainerRef>) 
                 screens: {
                     Home: 'home',
                     Links: 'links',
+                    Dices: 'dices',
                 },
             },
         },
