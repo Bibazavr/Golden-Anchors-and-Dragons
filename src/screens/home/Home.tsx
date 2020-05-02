@@ -1,18 +1,11 @@
 import * as React from 'react';
-import {Image, Text, TouchableOpacity, View} from 'react-native';
+import {Image, Text, View} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
-import {createDrawerNavigator} from "@react-navigation/drawer";
 
 import {stylesHome} from "./stylesHome";
 
-import {Inventory} from "./inventory/Inventory";
-import {DiceScreen} from "./dices/Dices";
-import {Todo} from "./todo/Todo";
 
-
-const Drawer = createDrawerNavigator();
-
-const Characteristic = () => {
+export const Characteristic = () => {
     return (
         <View style={stylesHome.container}>
             <ScrollView style={stylesHome.container} contentContainerStyle={stylesHome.contentContainer}>
@@ -28,38 +21,16 @@ const Characteristic = () => {
                 <View style={stylesHome.getStartedContainer}>
                     <DevelopmentModeNotice/>
 
-                    <Text style={stylesHome.getStartedText}>Open up the code for this screen:</Text>
-
-                    <View style={[stylesHome.codeHighlightContainer, stylesHome.homeScreenFilename]}>
-                        <Text>screens/HomeScreen.js</Text>
-                    </View>
-
                     <Text style={stylesHome.getStartedText}>
                         Тут надо основные характеристики распихать персонажа
                     </Text>
                 </View>
 
-                <View style={stylesHome.helpContainer}>
-                    <TouchableOpacity style={stylesHome.helpLink}>
-                        <Text style={stylesHome.helpLinkText}>Help, it didn’t automatically reload!</Text>
-                    </TouchableOpacity>
-                </View>
             </ScrollView>
         </View>
     )
 
 };
-
-export default function Home() {
-    return (
-        <Drawer.Navigator initialRouteName={"home"}>
-            <Drawer.Screen name={"Home"} component={Characteristic}/>
-            <Drawer.Screen name={"Inventory"} component={Inventory}/>
-            <Drawer.Screen name={"Dice"} component={DiceScreen}/>
-            <Drawer.Screen name={"Todo"} component={Todo}/>
-        </Drawer.Navigator>
-    );
-}
 
 function DevelopmentModeNotice() {
     if (__DEV__) {
