@@ -1,19 +1,55 @@
 import * as React from "react";
-import {View} from "react-native";
-import {Button, Header, Icon, Text} from "react-native-elements";
+import {ScrollView, StyleSheet, View} from "react-native";
+import {Header, Icon, ListItem, Text} from "react-native-elements";
+import {NavigationProp} from "@react-navigation/core/lib/typescript/src/types";
+import {ParamListBase} from "@react-navigation/routers";
 
 
-export const SideBarNavigator = ({navigation, style}: { navigation: any, style: any }) => {
-    return <View style={style}>
+export const SideBarNavigator = ({navigation}: { navigation: NavigationProp<ParamListBase>, style: any }) => {
+    const list: { name: string }[] = [
+        {
+            name: 'Todo',
+        },
+        {
+            name: 'Inventory',
+        }
+    ];
+
+    return <View style={stylesSideBarNavigator.container}>
         <SideBarHeader/>
-        <Button title={"Todo"} onPress={() => navigation.navigate('Todo')} icon={() => <Icon name={'settings'}/>}/>
-        <Button title={"Inventory"} onPress={() => navigation.navigate('Inventory')}
-                icon={() => <Icon name={'settings'}/>}/>
+        <ScrollView>
+            {list.map((item) => <ListItem
+                    key={item.name}
+                    title={item.name}
+                    onPress={() => navigation.navigate(item.name)}
+                    bottomDivider
+                />
+            )}
+        </ScrollView>
+        <ListItem
+            key={'Settings'}
+            title={'Settings'}
+            onPress={() => navigation.navigate('Settings')}
+            leftIcon={<Icon name={'settings'}/>}
+            bottomDivider
+        />
     </View>
 }
 
 const SideBarHeader = () => {
-    return <Header>
-        <Text style={{width: 250,}}> Тут надо ник Игрока написать</Text>
-    </Header>
+    return <Header containerStyle={stylesSideBarNavigator.header}
+                   leftComponent={<Text>GA&D</Text>}
+                   centerComponent={<Text> Тут надо ник Игрока написать</Text>}
+    />
 }
+
+
+const stylesSideBarNavigator = StyleSheet.create({
+    container: {
+        flexGrow: 1,
+        backgroundColor: '#fff',
+    },
+    header: {
+        backgroundColor: '#fff'
+    }
+});

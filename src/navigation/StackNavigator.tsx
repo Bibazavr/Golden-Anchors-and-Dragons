@@ -5,6 +5,7 @@ import {createStackNavigator} from "@react-navigation/stack";
 import BottomTabNavigator, {NavigatorProps} from "./BottomTabNavigator";
 import {Inventory} from "../screens/inventory/Inventory";
 import {Todo} from "../screens/todo/Todo";
+import {Settings} from "../screens/settings/Settings";
 
 
 const Stack = createStackNavigator();
@@ -23,6 +24,9 @@ export default function ({navigation, route}: NavigatorProps) {
             }}/>
             <Stack.Screen name={"Todo"} component={Todo} options={{
                 title: 'Todo',
+            }}/>
+            <Stack.Screen name={"Settings"} component={Settings} options={{
+                title: 'Settings',
             }}/>
         </Stack.Navigator>
     );
