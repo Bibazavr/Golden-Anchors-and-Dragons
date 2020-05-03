@@ -9,20 +9,22 @@ import {DiceScreen} from "../screens/dices/Dices";
 import {Characteristic} from "../screens/home/Home";
 
 
-const BottomTab = createBottomTabNavigator();
-
 export interface NavigatorProps {
     navigation: NavigationProp<{ headerTitle: (s: string) => void }>
     route: Route
 }
 
+const BottomTab = createBottomTabNavigator();
+
+const INITIAL_ROUTE_NAME = 'Profile';
+
 export default function BottomTabNavigator({navigation, route}: NavigatorProps) {
     // Set the header title on the parent stack navigator depending on the
     // currently active tab. Learn more in the documentation:
     // https://reactnavigation.org/docs/en/screen-options-resolution.html
-
+    navigation.setOptions({headerTitle: getHeaderTitle(route)});
     return (
-        <BottomTab.Navigator>
+        <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
             <BottomTab.Screen
                 name="Links"
                 component={Links}
@@ -51,3 +53,8 @@ export default function BottomTabNavigator({navigation, route}: NavigatorProps) 
     );
 }
 
+function getHeaderTitle(route: Route) {
+    const routeName = route.state?.routes?.[route.state.index].name ?? INITIAL_ROUTE_NAME;
+
+    return 'GA&D ' + routeName;
+}
