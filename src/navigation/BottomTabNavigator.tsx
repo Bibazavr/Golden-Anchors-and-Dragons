@@ -16,7 +16,7 @@ export interface NavigatorProps {
 
 const BottomTab = createBottomTabNavigator();
 
-const INITIAL_ROUTE_NAME = 'Profile';
+const INITIAL_ROUTE_NAME = 'Dices';
 
 export default function BottomTabNavigator({navigation, route}: NavigatorProps) {
     // Set the header title on the parent stack navigator depending on the

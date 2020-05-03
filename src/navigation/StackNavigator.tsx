@@ -14,15 +14,16 @@ const INITIAL_ROUTE_NAME = 'Bot';
 export default function ({navigation, route}: NavigatorProps) {
     navigation.setOptions({swipeEnabled: shouldSwipe(route)});
     return (
-        <Stack.Navigator initialRouteName={INITIAL_ROUTE_NAME} screenOptions={{animationTypeForReplace: "push",}}>
-            <Stack.Screen name={"Bot"} component={BottomTabNavigator}/>
+        <Stack.Navigator initialRouteName={INITIAL_ROUTE_NAME}
+                         screenOptions={{animationEnabled: shouldAnimate(route)}}>
+            <Stack.Screen name={"Bot"} component={BottomTabNavigator} options={{
+                title: 'Inventory',
+            }}/>
             <Stack.Screen name={"Inventory"} component={Inventory} options={{
                 title: 'Inventory',
-                animationEnabled: false,
             }}/>
             <Stack.Screen name={"Todo"} component={Todo} options={{
                 title: 'Todo',
-                animationEnabled: false,
             }}/>
         </Stack.Navigator>
     );
@@ -33,4 +34,9 @@ function shouldSwipe(route: Route) {
     return routeName === 'Profile';
 }
 
+function shouldAnimate(route: Route) {
+    // Надо включать анимацию только когда открыт не botNavigation
+    const routeName = route?.state?.routes[route?.state?.index].name
+    return false
+}
 
