@@ -7,10 +7,11 @@ import {NavigationProp} from "@react-navigation/core";
 import Links from '../screens/Links';
 import {DiceScreen} from "../screens/dices/Dices";
 import {Characteristic} from "../screens/home/Home";
+import {ParamListBase} from "@react-navigation/routers";
 
 
 export interface NavigatorProps {
-    navigation: NavigationProp<{ headerTitle: (s: string) => void }>
+    navigation: NavigationProp<ParamListBase>
     route: Route
 }
 

@@ -6,12 +6,14 @@ import {ParamListBase} from "@react-navigation/routers";
 
 
 export const SideBarNavigator = ({navigation}: { navigation: NavigationProp<ParamListBase>, style: any }) => {
-    const list: { name: string }[] = [
+    const list: { name: string, icon: string }[] = [
         {
             name: 'Todo',
+            icon: 'dashboard',
         },
         {
             name: 'Inventory',
+            icon: 'rowing',
         }
     ];
 
@@ -19,10 +21,10 @@ export const SideBarNavigator = ({navigation}: { navigation: NavigationProp<Para
         <SideBarHeader/>
         <ScrollView>
             {list.map((item) => <ListItem
-                    key={item.name}
-                    title={item.name}
-                    onPress={() => navigation.navigate(item.name)}
-                    bottomDivider
+                key={item.name}
+                title={item.name}
+                leftIcon={<Icon name={item.icon}/>}
+                onPress={() => navigation.navigate(item.name)}
                 />
             )}
         </ScrollView>
@@ -31,15 +33,15 @@ export const SideBarNavigator = ({navigation}: { navigation: NavigationProp<Para
             title={'Settings'}
             onPress={() => navigation.navigate('Settings')}
             leftIcon={<Icon name={'settings'}/>}
-            bottomDivider
+            topDivider
         />
     </View>
 }
 
 const SideBarHeader = () => {
     return <Header containerStyle={stylesSideBarNavigator.header}
-                   leftComponent={<Text>GA&D</Text>}
-                   centerComponent={<Text> Тут надо ник Игрока написать</Text>}
+                   leftComponent={<Text style={{fontSize: 15}}>GA&D</Text>}
+                   centerComponent={<Text style={{fontSize: 30}}>Bibazavr</Text>}
     />
 }
 
@@ -50,6 +52,6 @@ const stylesSideBarNavigator = StyleSheet.create({
         backgroundColor: '#fff',
     },
     header: {
-        backgroundColor: '#fff'
+        backgroundColor: '#ffffff'
     }
 });
