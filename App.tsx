@@ -60,7 +60,6 @@ export default function App() {
                 {Platform.OS === 'ios' && <StatusBar barStyle="default"/>}
                 <NavigationContainer ref={containerRef} initialState={initialNavigationState}>
                     <RightDrawer.Navigator drawerPosition={'right'} drawerType={'slide'}
-                                           lazy={false}
                                            drawerContent={({navigation, style,}) => <SideBarNavigator style={style}
                                                                                                       navigation={navigation}/>}
                     >

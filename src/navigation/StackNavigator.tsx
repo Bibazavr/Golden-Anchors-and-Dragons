@@ -14,8 +14,7 @@ const INITIAL_ROUTE_NAME = 'Bot';
 export default function ({navigation, route}: NavigatorProps) {
     navigation.setOptions({swipeEnabled: shouldSwipe(route)});
     return (
-        <Stack.Navigator initialRouteName={INITIAL_ROUTE_NAME}
-                         screenOptions={{animationEnabled: shouldAnimate(route)}}>
+        <Stack.Navigator initialRouteName={INITIAL_ROUTE_NAME} mode={'modal'} headerMode={'screen'}>
             <Stack.Screen name={"Bot"} component={BottomTabNavigator} options={{
                 title: 'Inventory',
             }}/>
