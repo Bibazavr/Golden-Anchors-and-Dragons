@@ -1,6 +1,7 @@
 import * as React from "react";
-import {Linking} from 'expo';
 import {NavigationContainerRef, useLinking} from '@react-navigation/native';
+
+import {Linking} from 'expo';
 
 
 export default function (containerRef: React.RefObject<NavigationContainerRef>) {
@@ -10,16 +11,16 @@ export default function (containerRef: React.RefObject<NavigationContainerRef>) 
             Root: {
                 path: 'root',
                 screens: {
-                    Profile: {
-                        path: 'rightScreen',
+                    Bot: {
+                        path: 'bot',
                         screens: {
                             Profile: 'profile',
-                            Inventory: 'inventory',
-                            Todo: 'todo',
+                            Links: 'links',
+                            Dices: 'dices',
                         }
                     },
-                    Links: 'links',
-                    Dices: 'dices',
+                    Inventory: 'inventory',
+                    Todo: 'todo',
                 },
             },
         },

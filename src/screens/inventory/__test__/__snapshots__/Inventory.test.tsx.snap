@@ -109,7 +109,7 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
-            "borderRadius": 3,
+            "borderRadius": 10,
           }
         }
       >
@@ -119,14 +119,7 @@ exports[`renders correctly 1`] = `
           isTVSelectable={true}
           style={
             Object {
-              "backgroundColor": "#F194FF",
-              "borderColor": "lightgrey",
-              "borderRadius": 10,
-              "borderWidth": 2,
-              "elevation": 2,
-              "height": 50,
               "opacity": 1,
-              "width": 50,
             }
           }
         >
@@ -134,13 +127,16 @@ exports[`renders correctly 1`] = `
             style={
               Object {
                 "alignItems": "center",
-                "backgroundColor": "transparent",
-                "borderColor": "#2089dc",
-                "borderRadius": 3,
-                "borderWidth": 0,
+                "backgroundColor": "#F194FF",
+                "borderColor": "lightgrey",
+                "borderRadius": 10,
+                "borderWidth": 2,
+                "elevation": 2,
                 "flexDirection": "row",
+                "height": 50,
                 "justifyContent": "center",
                 "padding": 8,
+                "width": 50,
               }
             }
           />
@@ -244,7 +240,7 @@ exports[`renders correctly 1`] = `
         <View
           style={
             Object {
-              "borderRadius": 3,
+              "borderRadius": 10,
             }
           }
         >
@@ -254,14 +250,7 @@ exports[`renders correctly 1`] = `
             isTVSelectable={true}
             style={
               Object {
-                "backgroundColor": "#F194FF",
-                "borderColor": "lightgrey",
-                "borderRadius": 10,
-                "borderWidth": 2,
-                "elevation": 2,
-                "height": 50,
                 "opacity": 1,
-                "width": 50,
               }
             }
           >
@@ -269,13 +258,16 @@ exports[`renders correctly 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "backgroundColor": "transparent",
-                  "borderColor": "#2089dc",
-                  "borderRadius": 3,
-                  "borderWidth": 0,
+                  "backgroundColor": "#F194FF",
+                  "borderColor": "lightgrey",
+                  "borderRadius": 10,
+                  "borderWidth": 2,
+                  "elevation": 2,
                   "flexDirection": "row",
+                  "height": 50,
                   "justifyContent": "center",
                   "padding": 8,
+                  "width": 50,
                 }
               }
             />
@@ -371,7 +363,7 @@ exports[`renders correctly 1`] = `
         <View
           style={
             Object {
-              "borderRadius": 3,
+              "borderRadius": 10,
             }
           }
         >
@@ -381,14 +373,7 @@ exports[`renders correctly 1`] = `
             isTVSelectable={true}
             style={
               Object {
-                "backgroundColor": "#F194FF",
-                "borderColor": "lightgrey",
-                "borderRadius": 10,
-                "borderWidth": 2,
-                "elevation": 2,
-                "height": 50,
                 "opacity": 1,
-                "width": 50,
               }
             }
           >
@@ -396,13 +381,16 @@ exports[`renders correctly 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "backgroundColor": "transparent",
-                  "borderColor": "#2089dc",
-                  "borderRadius": 3,
-                  "borderWidth": 0,
+                  "backgroundColor": "#F194FF",
+                  "borderColor": "lightgrey",
+                  "borderRadius": 10,
+                  "borderWidth": 2,
+                  "elevation": 2,
                   "flexDirection": "row",
+                  "height": 50,
                   "justifyContent": "center",
                   "padding": 8,
+                  "width": 50,
                 }
               }
             />
@@ -498,7 +486,7 @@ exports[`renders correctly 1`] = `
         <View
           style={
             Object {
-              "borderRadius": 3,
+              "borderRadius": 10,
             }
           }
         >
@@ -508,14 +496,7 @@ exports[`renders correctly 1`] = `
             isTVSelectable={true}
             style={
               Object {
-                "backgroundColor": "#F194FF",
-                "borderColor": "lightgrey",
-                "borderRadius": 10,
-                "borderWidth": 2,
-                "elevation": 2,
-                "height": 50,
                 "opacity": 1,
-                "width": 50,
               }
             }
           >
@@ -523,13 +504,16 @@ exports[`renders correctly 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "backgroundColor": "transparent",
-                  "borderColor": "#2089dc",
-                  "borderRadius": 3,
-                  "borderWidth": 0,
+                  "backgroundColor": "#F194FF",
+                  "borderColor": "lightgrey",
+                  "borderRadius": 10,
+                  "borderWidth": 2,
+                  "elevation": 2,
                   "flexDirection": "row",
+                  "height": 50,
                   "justifyContent": "center",
                   "padding": 8,
+                  "width": 50,
                 }
               }
             />
@@ -626,7 +610,7 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
-            "borderRadius": 3,
+            "borderRadius": 10,
           }
         }
       >
@@ -636,14 +620,7 @@ exports[`renders correctly 1`] = `
           isTVSelectable={true}
           style={
             Object {
-              "backgroundColor": "#F194FF",
-              "borderColor": "lightgrey",
-              "borderRadius": 10,
-              "borderWidth": 2,
-              "elevation": 2,
-              "height": 50,
               "opacity": 1,
-              "width": 50,
             }
           }
         >
@@ -651,13 +628,16 @@ exports[`renders correctly 1`] = `
             style={
               Object {
                 "alignItems": "center",
-                "backgroundColor": "transparent",
-                "borderColor": "#2089dc",
-                "borderRadius": 3,
-                "borderWidth": 0,
+                "backgroundColor": "#F194FF",
+                "borderColor": "lightgrey",
+                "borderRadius": 10,
+                "borderWidth": 2,
+                "elevation": 2,
                 "flexDirection": "row",
+                "height": 50,
                 "justifyContent": "center",
                 "padding": 8,
+                "width": 50,
               }
             }
           />
@@ -753,7 +733,7 @@ exports[`renders correctly 1`] = `
       <View
         style={
           Object {
-            "borderRadius": 3,
+            "borderRadius": 10,
           }
         }
       >
@@ -763,14 +743,7 @@ exports[`renders correctly 1`] = `
           isTVSelectable={true}
           style={
             Object {
-              "backgroundColor": "#F194FF",
-              "borderColor": "lightgrey",
-              "borderRadius": 10,
-              "borderWidth": 2,
-              "elevation": 2,
-              "height": 50,
               "opacity": 1,
-              "width": 50,
             }
           }
         >
@@ -778,13 +751,16 @@ exports[`renders correctly 1`] = `
             style={
               Object {
                 "alignItems": "center",
-                "backgroundColor": "transparent",
-                "borderColor": "#2089dc",
-                "borderRadius": 3,
-                "borderWidth": 0,
+                "backgroundColor": "#F194FF",
+                "borderColor": "lightgrey",
+                "borderRadius": 10,
+                "borderWidth": 2,
+                "elevation": 2,
                 "flexDirection": "row",
+                "height": 50,
                 "justifyContent": "center",
                 "padding": 8,
+                "width": 50,
               }
             }
           />
@@ -888,7 +864,7 @@ exports[`renders correctly 1`] = `
         <View
           style={
             Object {
-              "borderRadius": 3,
+              "borderRadius": 10,
             }
           }
         >
@@ -898,14 +874,7 @@ exports[`renders correctly 1`] = `
             isTVSelectable={true}
             style={
               Object {
-                "backgroundColor": "#F194FF",
-                "borderColor": "lightgrey",
-                "borderRadius": 10,
-                "borderWidth": 2,
-                "elevation": 2,
-                "height": 50,
                 "opacity": 1,
-                "width": 50,
               }
             }
           >
@@ -913,13 +882,16 @@ exports[`renders correctly 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "backgroundColor": "transparent",
-                  "borderColor": "#2089dc",
-                  "borderRadius": 3,
-                  "borderWidth": 0,
+                  "backgroundColor": "#F194FF",
+                  "borderColor": "lightgrey",
+                  "borderRadius": 10,
+                  "borderWidth": 2,
+                  "elevation": 2,
                   "flexDirection": "row",
+                  "height": 50,
                   "justifyContent": "center",
                   "padding": 8,
+                  "width": 50,
                 }
               }
             />
@@ -1015,7 +987,7 @@ exports[`renders correctly 1`] = `
         <View
           style={
             Object {
-              "borderRadius": 3,
+              "borderRadius": 10,
             }
           }
         >
@@ -1025,14 +997,7 @@ exports[`renders correctly 1`] = `
             isTVSelectable={true}
             style={
               Object {
-                "backgroundColor": "#F194FF",
-                "borderColor": "lightgrey",
-                "borderRadius": 10,
-                "borderWidth": 2,
-                "elevation": 2,
-                "height": 50,
                 "opacity": 1,
-                "width": 50,
               }
             }
           >
@@ -1040,13 +1005,16 @@ exports[`renders correctly 1`] = `
               style={
                 Object {
                   "alignItems": "center",
-                  "backgroundColor": "transparent",
-                  "borderColor": "#2089dc",
-                  "borderRadius": 3,
-                  "borderWidth": 0,
+                  "backgroundColor": "#F194FF",
+                  "borderColor": "lightgrey",
+                  "borderRadius": 10,
+                  "borderWidth": 2,
+                  "elevation": 2,
                   "flexDirection": "row",
+                  "height": 50,
                   "justifyContent": "center",
                   "padding": 8,
+                  "width": 50,
                 }
               }
             />

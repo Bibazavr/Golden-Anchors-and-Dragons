@@ -31,7 +31,7 @@ export const BasicSlot = () => {
                 </View>
             </Modal>
 
-            <Button style={styles.openButton} type={"clear"}
+            <Button buttonStyle={styles.openButton} type={"clear"}
                     onPress={() => {
                         setModalVisible(true);
                     }}/>

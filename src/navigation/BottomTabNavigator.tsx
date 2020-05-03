@@ -6,23 +6,23 @@ import {NavigationProp} from "@react-navigation/core";
 
 import Links from '../screens/Links';
 import {DiceScreen} from "../screens/dices/Dices";
-import Profile from "./Profile";
+import {Characteristic} from "../screens/home/Home";
 
-
-const BottomTab = createBottomTabNavigator();
-const INITIAL_ROUTE_NAME = 'Profile';
 
 export interface NavigatorProps {
     navigation: NavigationProp<{ headerTitle: (s: string) => void }>
     route: Route
 }
 
+const BottomTab = createBottomTabNavigator();
+
+const INITIAL_ROUTE_NAME = 'Dices';
+
 export default function BottomTabNavigator({navigation, route}: NavigatorProps) {
     // Set the header title on the parent stack navigator depending on the
     // currently active tab. Learn more in the documentation:
     // https://reactnavigation.org/docs/en/screen-options-resolution.html
     navigation.setOptions({headerTitle: getHeaderTitle(route)});
-
     return (
         <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
             <BottomTab.Screen
@@ -43,7 +43,7 @@ export default function BottomTabNavigator({navigation, route}: NavigatorProps) 
             />
             <BottomTab.Screen
                 name="Profile"
-                component={Profile}
+                component={Characteristic}
                 options={{
                     tabBarIcon: ({color, size}) => <Icon name={'videogame-asset'} color={color} size={size}/>,
                     title: 'Profile',
@@ -54,14 +54,7 @@ export default function BottomTabNavigator({navigation, route}: NavigatorProps) 
 }
 
 function getHeaderTitle(route: Route) {
-    const routeName = route.state?.routes?.[route.state.index]?.name ?? INITIAL_ROUTE_NAME;
+    const routeName = route.state?.routes?.[route.state.index].name ?? INITIAL_ROUTE_NAME;
 
-    switch (routeName) {
-        case 'Dices':
-            return 'GA&D Dices';
-        case 'Links':
-            return 'Links to learn more';
-        case 'Profile':
-            return 'GA&D Profile';
-    }
+    return 'GA&D ' + routeName;
 }
