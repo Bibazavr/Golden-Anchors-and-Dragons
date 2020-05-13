@@ -23,7 +23,16 @@ export default function BottomTabNavigator({navigation, route}: NavigatorProps) 
     // Set the header title on the parent stack navigator depending on the
     // currently active tab. Learn more in the documentation:
     // https://reactnavigation.org/docs/en/screen-options-resolution.html
-    navigation.setOptions({headerTitle: getHeaderTitle(route)});
+
+    const rightButton = resolveRight({
+        navigation,
+        route
+    });
+    navigation.setOptions({
+        headerTitle: getHeaderTitle(route),
+        headerRight: () => rightButton,
+    });
+
     return (
         <BottomTab.Navigator initialRouteName={INITIAL_ROUTE_NAME}>
             <BottomTab.Screen
@@ -56,6 +65,14 @@ export default function BottomTabNavigator({navigation, route}: NavigatorProps) 
 
 function getHeaderTitle(route: Route) {
     const routeName = route.state?.routes?.[route.state.index].name ?? INITIAL_ROUTE_NAME;
-
     return 'GA&D ' + routeName;
+}
+
+// FIXME: Плохо, что у navigation тип any
+function resolveRight({navigation, route}: { navigation: any, route: Route }) {
+    const routeName = route.state?.routeNames[route.state?.index]
+    console.log("resolveRight", routeName)
+    if (routeName === 'Profile')
+        return <Icon name={'reorder'} onPress={() => navigation.openDrawer()}/>
+    return null
 }

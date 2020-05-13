@@ -59,9 +59,9 @@ export default function App() {
             <View style={styles.container}>
                 {Platform.OS === 'ios' && <StatusBar barStyle="default"/>}
                 <NavigationContainer ref={containerRef} initialState={initialNavigationState}>
-                    <RightDrawer.Navigator drawerPosition={'right'} drawerType={'slide'}
-                                           drawerContent={({navigation, style,}) => <SideBarNavigator style={style}
-                                                                                                      navigation={navigation}/>}
+                    <RightDrawer.Navigator initialRouteName={'Root'} drawerPosition={'right'} drawerType={'slide'}
+                                           drawerContent={({navigation}) =>
+                                               <SideBarNavigator navigation={navigation}/>}
                     >
                         <RightDrawer.Screen name="Root" component={StackNavigator}/>
                     </RightDrawer.Navigator>

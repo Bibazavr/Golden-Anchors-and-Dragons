@@ -1,11 +1,9 @@
 import * as React from "react";
 import {ScrollView, StyleSheet, View} from "react-native";
 import {Header, Icon, ListItem, Text} from "react-native-elements";
-import {NavigationProp} from "@react-navigation/core/lib/typescript/src/types";
-import {ParamListBase} from "@react-navigation/routers";
 
 
-export const SideBarNavigator = ({navigation}: { navigation: NavigationProp<ParamListBase>, style: any }) => {
+export const SideBarNavigator = ({navigation}: { navigation: any }) => {
     const list: { name: string, icon: string }[] = [
         {
             name: 'Todo',
